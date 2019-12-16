@@ -60,7 +60,8 @@ def detection(output_file):
             res_keyframe_dir = os.path.join(output_video_keyframe_file,keyframe)
 
             # detect and save results for keyframes
-            detections = detector.detectObjectsFromImage(input_image=keyframe_dir,
+            custom_objects = detector.CustomObjects(person=True)
+            detections =  detector.detectCustomObjectsFromImage(custom_objects=custom_objects,input_image=keyframe_dir,
                                                      output_image_path=res_keyframe_dir)
             ori_image = cv2.imread(keyframe_dir)
             count = 1
