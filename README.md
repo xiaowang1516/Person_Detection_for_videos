@@ -14,4 +14,3 @@
 - output % genetated files 1) keyframe 2) result_crop 3)result_keyframe 4) result_video
 - Visualization for result_keyframe
 ![](https://github.com/xiaowang1516/Person_Detection_for_videos/blob/master/Result.png)
-
